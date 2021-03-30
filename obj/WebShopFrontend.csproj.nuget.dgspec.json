@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopFrontend\\WebShopFrontend\\WebShopFrontend.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopAssignment\\WebShopAssignment\\WebShopAssignment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopAssignment\\WebShopAssignment\\WebShopAssignment.csproj",
+        "projectName": "WebShopAssignment",
+        "projectPath": "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopAssignment\\WebShopAssignment\\WebShopAssignment.csproj",
+        "packagesPath": "C:\\Users\\madel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopAssignment\\WebShopAssignment\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\madel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopFrontend\\WebShopFrontend\\WebShopFrontend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopFrontend\\WebShopFrontend\\WebShopFrontend.csproj",
+        "projectName": "WebShopFrontend",
+        "projectPath": "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopFrontend\\WebShopFrontend\\WebShopFrontend.csproj",
+        "packagesPath": "C:\\Users\\madel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopFrontend\\WebShopFrontend\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\madel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopAssignment\\WebShopAssignment\\WebShopAssignment.csproj": {
+                "projectPath": "C:\\Users\\madel\\OneDrive\\Skrivbord\\Utbildning\\Objektorienterad arkitektur\\Inlämningsuppgifter\\WebShopAssignment\\WebShopAssignment\\WebShopAssignment.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
