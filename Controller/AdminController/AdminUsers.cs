@@ -1,60 +1,90 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using WebShopAssignment;
 using WebShopFrontend.Helpers;
+using WebShopFrontend.View;
 
 namespace WebShopFrontend.Controller.AdminController
 {
     public class AdminUsers
     {
         public static WebShopAPI api = new WebShopAPI();
-
+        /// <summary>
+        /// Skriver ut användarnamnet på alla användare
+        /// </summary>
+        /// <param name="adminId"></param>
         public static void PrintUsers(int adminId)
-        {
-            //Skriv ut lista på användare
+        {           
             UserHelpers.IsUserActice(adminId);
 
             var users = api.ListUser(adminId);
-            Console.WriteLine("The users are: ");
+            Console.WriteLine("Användare: ");
             foreach (var u in users)
             {
                 Console.WriteLine(u.Name);
 
             }
-
+            Console.WriteLine("");
+            Thread.Sleep(2000);
+            Console.Clear();
         }
-
+        /// <summary>
+        /// Sök efter användare
+        /// </summary>
+        /// <param name="adminId"></param>
         public static void SearchForUser(int adminId)
         {
-            //Sök efter användare
             UserHelpers.IsUserActice(adminId);
 
-            Console.WriteLine("Search for: ");
+            Console.WriteLine("Sök efter: ");
             string keyword = Console.ReadLine();
             var match = api.FindUser(adminId, keyword);
-            Console.WriteLine("Matching results: ");
+            Console.WriteLine("Resultat: ");
             foreach (var m in match)
             {
-                Console.WriteLine(m.Name);
+                Console.WriteLine(m.Name);                
             }
+            
+            if (match.Count == 0)
+            {
+                Messages.DoesNotExist();
+                Console.Clear();
+                return;
+            }
+            Thread.Sleep(2000);
+            Console.Clear();
 
         }
-
+        /// <summary>
+        /// Lägg till användare
+        /// </summary>
+        /// <param name="adminId"></param>
         public static void AddingUser(int adminId)
         {
-            //Lägg till användare
             UserHelpers.IsUserActice(adminId);
 
-            Console.WriteLine("What user would you like to add?");
-            Console.WriteLine("Username: ");
+            Console.WriteLine("Vilken användare vill du lägga till?");
+            Console.WriteLine("Användarnamn: ");
             string name = Console.ReadLine();
-            Console.WriteLine("Password: ");
+            Console.WriteLine("Lösenord: ");
             string password = Console.ReadLine();
 
             var added = api.AddUser(adminId, name, password);
-            //Console.WriteLine(added);
+            if (added)
+            {
+                Console.WriteLine("Användaren är tillagd");
+                Thread.Sleep(2000);
+                Console.Clear();
 
+            }
+            else
+            {
+                Messages.WrongInput();
+                Console.Clear();
+                return;
+            }
         }
 
     }

@@ -10,9 +10,11 @@ namespace WebShopFrontend.Controller
     public class LoginMenu
     {
         public static WebShopAPI api = new WebShopAPI();
+        /// <summary>
+        /// Kollar om användaren finns
+        /// </summary>
         public static void Startup()
         {
-
             Console.WriteLine("Användarnamn: ");
             string name = Console.ReadLine();
             Console.WriteLine("Lösenord: ");
@@ -31,7 +33,9 @@ namespace WebShopFrontend.Controller
                 UsersView.UserMenu(userOk);
             }
         }
-
+        /// <summary>
+        /// Om annvändaren blivit utloggad
+        /// </summary>
         public static void LoginAgain()
         {
             Console.WriteLine("Du har blivit utloggad pga inaktivitet.");

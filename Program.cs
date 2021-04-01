@@ -1,5 +1,6 @@
 ﻿using System;
 using WebShopFrontend.View;
+using WebShopAssignment;
 
 namespace WebShopFrontend
 {
@@ -7,6 +8,10 @@ namespace WebShopFrontend
     {
         static void Main(string[] args)
         {
+            WebShopAssignment.Helpers.Seeder.SeedUsers();
+            WebShopAssignment.Helpers.Seeder.SeedBookTitles();
+            WebShopAssignment.Helpers.Seeder.SeedCategories();
+
             StartView.StartMenu();
 
         }

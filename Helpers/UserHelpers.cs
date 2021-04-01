@@ -9,7 +9,11 @@ namespace WebShopFrontend.Helpers
     public class UserHelpers
     {
         public static WebShopAPI api = new WebShopAPI();
-
+        /// <summary>
+        /// Kollar om användaren är aktiv
+        /// </summary>
+        /// <param name="adminId"></param>
+        /// <returns></returns>
         public static bool IsUserActice(int adminId)
         {
             var userActive = api.Ping(adminId);
@@ -19,6 +23,8 @@ namespace WebShopFrontend.Helpers
             }
             return true;
         }
+
+
 
 
     }

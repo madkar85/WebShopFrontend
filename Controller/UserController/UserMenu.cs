@@ -17,32 +17,21 @@ namespace WebShopFrontend.Controller.UserController
                     UserBookCategory.PrintAllCategories(userId);                    
                     break;
                 case 2:
-                    UserBookCategory.SearchForCategories(userId);
-                    //api.GetCategories();
+                    UserBookCategory.SearchForCategories(userId);               
                     break;
                 case 3:
-                    //api.GetCategory();
+                    UserBook.GetBooksInStock(userId);                    
                     break;
                 case 4:
-                    //api.GetAvailableBooks();
+                    UserBook.SearchForBook(userId);
                     break;
                 case 5:
-                   // api.GetBook();
+                    UserBook.GetBooksFromAuthor(userId);
                     break;
                 case 6:
-                    UserBook.SearchForBook(userId);
-                    //api.GetBooks();
-                    break;
-                case 7:
-                   // api.GetAuthors();
-                    break;
-                case 8:
-                    //skriv ut en lista på alla böcker, fråga sedan vilken dom vill köpa. Svaret visar vilket index
-                    // i listan som ska sparas, det är bookId.
-                    //api.BuyBook();
-                    break;
-                case 9:
-                   // api.Logout();
+                    Console.WriteLine("Du loggas nu ut.");
+                     api.Logout(userId);
+                    Environment.Exit(0);
                     break;
                 default:
                     Messages.WrongInput();

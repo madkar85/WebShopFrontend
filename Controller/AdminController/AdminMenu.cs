@@ -17,11 +17,10 @@ namespace WebShopFrontend.Controller
             switch (input)
             {               
                 case 1:
-                    //Fråga om bokinfon och spara i variabler, skicka med i metoden nedan
                     AdminBook.AddsBook(adminId);                   
                     break;
                 case 2:
-                    AdminBook.SetsAmount(adminId);                  
+                     AdminBook.SetsAmount(adminId);                  
                     break;
                 case 3:
                     AdminUsers.PrintUsers(adminId);                   
@@ -30,22 +29,23 @@ namespace WebShopFrontend.Controller
                     AdminUsers.SearchForUser(adminId);
                     break;
                 case 5:
-                   // api.UpdateBook();
+                    AdminBook.UpdatesBook(adminId);                 
                     break;
                 case 6:
-                   // api.DeleteBook();
+                    AdminBook.DeleteBook(adminId);
                     break;
                 case 7:
                     AdminBookCategory.AddsCategory(adminId);                   
                     break;
                 case 8:
-                    //api.AddBookToCategory();
+                    
+                    AdminBook.AddCategoryToBook(adminId);
                     break;
                 case 9:
-                    //api.UpdateCategory();
+                    AdminBookCategory.UpdateCategory(adminId);                    
                     break;
                 case 10:
-                    //api.DeleteCategory();
+                    AdminBookCategory.DeleteCategory(adminId);
                     break;
                 case 11:
                     AdminUsers.AddingUser(adminId);
