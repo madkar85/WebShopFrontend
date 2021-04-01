@@ -174,7 +174,7 @@ namespace WebShopFrontend.Controller
 
         }
         /// <summary>
-        /// Sök efter bok av en viss författare
+        /// Sök böcker från en viss författare
         /// </summary>
         /// <param name="userId"></param>
         public static void GetBooksFromAuthor(int userId)
